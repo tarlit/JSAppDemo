@@ -1,0 +1,9 @@
+﻿<strong>Title: </strong> <%=Title%>
+<br />
+<strong>Body: </strong> <%=Body%>
+<br />
+<strong>Time due: </strong> <%=TimeDue%>
+<br />
+<% var checked = IsCompleted ? "checked" : ""; %>
+<strong>Completed: </strong>
+<input type="checkbox" <%= checked %>>

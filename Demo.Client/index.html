@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Tasks</title>
+    <script src="Scripts/lib/class.js"></script>
+    <script src="Scripts/lib/template.js"></script>
+    <script src="Scripts/lib/jquery-2.1.1.js"></script>
+    <script src="Scripts/lib/rsvp.js"></script>
+    <script src="Scripts/app/http-requester.js"> </script>
+    <script src="Scripts/app/repository.js"></script>
+    <script src="Scripts/app/controller.js"></script>
+    <script src="Scripts/app/ui.js"></script>
+</head>
+<body>
+    <div id="wrapper"></div>
+    <script>
+        //var repository = repository.get("http://localhost:12977/api/"); // TODO: Change this
+        // #region Using the repository
+        //repository.tasks.all()
+        //    .then(function (data) { console.log(data) }, function (err) { console.log("Error!" + JSON.stringify(err)) });
+
+        //repository.tasks.inProgress()
+        //    .then(function (data) { console.log(data) }, function (err) { console.log("Error!" + JSON.stringify(err)) });
+
+        //repository.tasks.byId(3)
+        //    .then(function (data) { console.log(data) }, function (err) { console.log("Error!" + JSON.stringify(err)) });
+
+        //repository.tasks.edit(3, "Title: NewPesho", "Body: NewGosho")
+        //    .then(function (data) { console.log(data) }, function (err) { console.log("Error!" + JSON.stringify(err)) });
+
+        //repository.tasks.destroy(3)
+        //    .then(function (data) { console.log(data) }, function (err) { console.log("Error!" + JSON.stringify(err)) });
+        // #endregion
+        var controller = controller.get(); // TODO: Change URL (or pass it as a parameter in controller.get()
+        controller.loadMainPage("#wrapper");
+    </script>
+</body>
+</html>
